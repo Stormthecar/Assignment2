@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ADD8E6"> <!-- Light Blue Background -->
+
+    <!-- Search bar for filtering by address -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by address"
+        android:padding="12dp"
+        android:background="#FFFFFF" /> <!-- White Background -->
+
+    <!-- RecyclerView for displaying locations -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/location_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="#FFFFFF" /> <!-- White Background -->
+
+    <!-- Button container at the bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <Button
+            android:onClick="openAddLocationActivity"
+            android:id="@+id/button_add_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Location"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#0000FF"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

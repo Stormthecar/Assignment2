@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/address_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address" />
+
+    <EditText
+        android:id="@+id/latitude_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/longitude_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longitude"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/button_save_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="saveLocation"
+        android:backgroundTint="#0000FF"
+        android:text="Save Location" />
+
+    <Button
+        android:id="@+id/button_delete_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Location"
+        android:backgroundTint="#0000FF"
+        android:onClick="deleteLocation"/>
+
+</LinearLayout>
